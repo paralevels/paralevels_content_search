@@ -14,7 +14,7 @@ public class ContentSearchWebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost") // Allow requests from localhost
+                        .allowedOrigins("http://localhost:8070") // Allow requests from localhost:8070
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
